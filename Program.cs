@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("Informe a nota final do aluno: ");
 int nota = int.Parse(Console.ReadLine());
-if nota >=7
+if (nota >= 7)
 {
     Console.WriteLine("Aprovado");
 }
