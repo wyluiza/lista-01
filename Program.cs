@@ -1,6 +1,14 @@
-﻿Console.WriteLine("Informe o número da tabuada: ");
-int numero = int.Parse(Console.ReadLine());
-for (int i = 1; i <= 10; i++)
-{
-    Console.WriteLine($"{numero} x {i} = {numero * i}");
-}
+﻿Console.WriteLine("Informe o primeiro valor: ");
+double valor1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Informe o segundo valor: ");
+double valor2 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Informe o terceiro valor: ");
+double valor3 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Informe o quarto valor: ");
+double valor4 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Informe o quinto valor: ");
+double valor5 = Convert.ToDouble(Console.ReadLine());
+double media = (valor1 + valor2 + valor3 + valor4 + valor5) / 5;
+Console.WriteLine("A média dos valores é: " + media);
+double soma = valor1 + valor2 + valor3 + valor4 + valor5;
+Console.WriteLine("A soma dos valores é: " + soma);
