@@ -1,10 +1,18 @@
-﻿Console.WriteLine("Informe um número inteiro: ");
-int numero = int.Parse(Console.ReadLine());
-if (numero % 2 == 0)
+﻿Console.WriteLine("Informe a idade do passageiro: ");
+int idade = int.Parse(Console.ReadLine());
+Console.WriteLine("Informe o valor normal da passagem: ");
+double valorPassagem = double.Parse(Console.ReadLine());
+if (idade <= 5)
 {
-    Console.WriteLine("O número é par.");
+    Console.WriteLine("Valor a pagar: R$0,00.");
+}
+else if (idade >= 60) 
+{
+    double valorDesconto = valorPassagem * 0.5;
+    double valorFinal = valorPassagem - valorDesconto;
+    Console.WriteLine($"Valor a pagar: R${valorFinal:F2}.");
 }
 else
 {
-    Console.WriteLine("O número é ímpar.");
+    Console.WriteLine($"Valor a pagar: R${valorPassagem:F2}.");
 }
