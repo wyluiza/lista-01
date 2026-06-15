@@ -1,14 +1,26 @@
-﻿Console.WriteLine("Informe o primeiro valor: ");
-double valor1 = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Informe o segundo valor: ");
-double valor2 = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Informe o terceiro valor: ");
-double valor3 = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Informe o quarto valor: ");
-double valor4 = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Informe o quinto valor: ");
-double valor5 = Convert.ToDouble(Console.ReadLine());
-double media = (valor1 + valor2 + valor3 + valor4 + valor5) / 5;
-Console.WriteLine("A média dos valores é: " + media);
-double soma = valor1 + valor2 + valor3 + valor4 + valor5;
-Console.WriteLine("A soma dos valores é: " + soma);
+﻿int positivos = 0;
+int negativos = 0;
+int zeros = 0;
+
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine("Informe um número: ");
+    int numero = int.Parse(Console.ReadLine());
+
+    if (numero > 0)
+    {
+        positivos++;
+    }
+    else if (numero < 0)
+    {
+        negativos++;
+    }
+    else
+    {
+        zeros++;
+    }
+}
+
+Console.WriteLine("Quantidade de positivos: " + positivos);
+Console.WriteLine("Quantidade de negativos: " + negativos);
+Console.WriteLine("Quantidade de zeros: " + zeros);
