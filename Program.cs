@@ -1,23 +1,10 @@
-﻿    Console.WriteLine("Informe a primeira pontuação: ");
-    int pontuacao1 = int.Parse(Console.ReadLine());
-    Console.WriteLine("Informe a segunda pontuação: ");
-    int pontuacao2 = int.Parse(Console.ReadLine());
-    Console.WriteLine("Informe a terceira pontuação: ");
-    int pontuacao3 = int.Parse(Console.ReadLine());
-
-    if (pontuacao1 > pontuacao2 && pontuacao1 > pontuacao3)
-    {
- Console.WriteLine("A maior pontuação é: " + pontuacao1);
-    }
-    else if (pontuacao2 > pontuacao1 && pontuacao2 > pontuacao3)
-    {
-        Console.WriteLine("A maior pontuação é: " + pontuacao2);
-    }
-    else if (pontuacao3 > pontuacao1 && pontuacao3 > pontuacao2)
-    {
-        Console.WriteLine("A maior pontuação é: " + pontuacao3);
-    }
-    else
-    {
-        Console.WriteLine("As três pontuações são iguais.");
-    }
+﻿Console.WriteLine("Informe um número inteiro: ");
+int numero = int.Parse(Console.ReadLine());
+if (numero % 2 == 0)
+{
+    Console.WriteLine("O número é par.");
+}
+else
+{
+    Console.WriteLine("O número é ímpar.");
+}
